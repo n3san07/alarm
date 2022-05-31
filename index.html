@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>alarm</title>
+  </head>
+  <body>
+    <div class="clock">
+      <h1 id="h">0</h1>
+      <h1 id="m">0</h1>
+      <h1 id="s">0</h1>
+    </div>
+
+    <div class="songs">
+      <button onclick="s1()">
+        Kanye West <br />
+        Good Morning<br />
+        (soft)
+      </button>
+      <button onclick="s2()">
+        Alan Walker <br />
+        Ignite <br />
+        (mid)
+      </button>
+      <button onclick="s3()">
+        Marc Rebillet<br />
+        Morning Song <br />(hard)
+      </button>
+    </div>
+
+    <div class="alarm">
+      <h1 id="state">set your alerm</h1>
+      <input type="datetime-local" id="time" onchange="getAlarm()" />
+      <button onclick="setAlarm()">clear</button>
+      <h1 id="remaine">time remaing</h1>
+    </div>
+
+    <p class="my">Hani Gath</p>
+  </body>
+</html>
